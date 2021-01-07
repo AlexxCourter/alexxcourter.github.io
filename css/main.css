@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/*Whole page*/
+header, main, footer {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Sans', sans-serif;
+}
+/*header*/
+.home-portrait {
+  max-width: 100%;
+  float: right;
+}
+
+header h1 {
+  background-color: #15507A;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+}
+/*Main section*/
+main h2 {
+  padding-left: 1em;
+}
+.assignments {
+  margin-left: 1em;
+}
+
+/*footer*/
+footer {
+  background-color: #15507A;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+footer p {
+  color: white;
+  text-align: center;
+  clear: right;
+}
+footer p a {
+  color: white;
+}
+#date-updated {
+  color: #70D7A1;
+}
