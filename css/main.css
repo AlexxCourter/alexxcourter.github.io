@@ -28,9 +28,13 @@ header h1 {
 /*Main section*/
 main h2 {
   padding-left: 1em;
+  padding-bottom: 0.5em;
 }
 .assignments {
   margin-left: 1em;
+}
+.bottom-border {
+  border-bottom: 1px solid black;
 }
 
 /*footer*/
