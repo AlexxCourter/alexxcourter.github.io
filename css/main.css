@@ -6,9 +6,10 @@ header, main, footer {
   max-width: 760px;
 }
 
-h1, h2, h3 {
+h1, h2, p, ul {
   font-family: 'Noto Sans', sans-serif;
 }
+
 /*header*/
 .home-portrait {
   max-width: 100%;
