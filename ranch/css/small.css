@@ -8,16 +8,18 @@ body {
 
 /* Header */
 header {
-    background-color: #17a8e4;
+    background-color: #8767B0;
     padding: 1rem 2%;
 }
 
 header h1 {
     margin: 0;
+    font-weight: bold;
 }
 
 header h2 {
     margin: 0;
+    font-size: 1.36em;
 }
 /* Navigation */
 nav {background-color: #111;}
@@ -43,7 +45,7 @@ main {
 }
 
 main h1 {
-    color: #17a8e4;
+    color: #8767B0;
 }
 
 main figure img {width: 100%;}
@@ -57,7 +59,7 @@ main figcaption {text-align: center; font-size: 0.8rem;}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #19a8e4;
+    background-color: #8767B0;
 }
 
 .clearfix:after {
