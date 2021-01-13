@@ -32,7 +32,33 @@ nav a {
     text-align: center;
     text-decoration: none;
 }
+
 nav a:hover {background-color: #444;}
+
+
+/* main rules */
+main {
+    padding: 1rem 2%;
+    display: block;
+}
+
+main h1 {
+    color: #17a8e4;
+}
+
+main figure img {width: 100%;}
+main figure{
+    width: 100%;
+    margin: 0;
+}
+
+main figcaption {text-align: center; font-size: 0.8rem;}
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: #19a8e4;
+}
 
 .clearfix:after {
     content: "";
