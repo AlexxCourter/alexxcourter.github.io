@@ -1,0 +1,10 @@
+@media only screen and (min-width: 32.5em) { 
+    /* beginning of media query */
+
+        .home-portrait {
+          float: right;
+          margin: .8em;
+        }
+        
+    /* end of media query */ 
+    } 
