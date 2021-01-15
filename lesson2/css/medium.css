@@ -1,0 +1,7 @@
+/* medium screen media query */
+@media only screen and (min-width: 540px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+} /* end of media query */
