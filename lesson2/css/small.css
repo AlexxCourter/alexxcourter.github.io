@@ -12,7 +12,7 @@ h1 {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size: 2.5em;
-    color: #eeeeee;
+    color: #000;
     text-align: center;
 }
 h2 {
@@ -21,7 +21,7 @@ h2 {
     font-size: 1.5em
 }
 header h2 {
-    color: #eeeeee;
+    color: #000;
     margin-top: 0;
     text-align: center;
 }
@@ -79,8 +79,8 @@ article ol li {
 
 /* footer styles */
 footer {
-    color: #fff;
+    color: #000;
 }
 footer a {
-    color: #fff;
+    color: #000;
 }
