@@ -1,0 +1,115 @@
+/* apply box layout to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Default text styles */
+
+h1 {font-size: 1.4rem; font-family: 'Righteous', sans-serif;}
+
+h2 {font-size:1.3rem; font-family: 'Mukta', sans-serif;}
+
+h3 {font-size:1.0rem; font-family: 'Mukta', sans-serif;}
+
+p {font-size: 16px; font-family: 'Mukta', sans-serif;}
+
+.white-text {color: #FFFFFF;}
+
+main {background-color: #F5F5F5;}
+
+main, footer {
+    padding: 1rem;
+}
+
+/* Header styles */
+header {
+    padding: 1rem;
+    background-color: #162F33;
+}
+
+header h1 {
+    font-family: 'Righteous', sans-serif;
+}
+
+header h1, header h3, td h1, td h2, td h3 {
+    margin: 0;
+}
+
+header img {
+    float: left;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+/* navigation */
+
+nav {background-color: #0589A1;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color:  #3AD4F0;
+    color: #000000
+}
+
+nav ul li.active-page a {
+    background-color: #045662;
+    color: #fff;
+}
+
+/* main styles */
+
+
+/* footer styles */
+
+footer {background-color:#0589A1; color: #ffffff;}
+footer a {color:#ffffff;}
+
+/* table styles */
+table {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: grey 5px 5px 5px;
+    font-family: sans-serif;
+}
+
+td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+th {font-size: 0.8rem;}
+
+tr td:nth-child(1) {
+    padding-right: 2rem;
+}
+
+td.head-color {background-color: #162F33;}
+
+td.nav-color {background-color: #0589A1;}
+
+td.hover-color {background-color: #3AD4F0;}
+
+td.active-color {background-color: #045662;}
+
+td.back-color {background-color: #F5F5F5;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
