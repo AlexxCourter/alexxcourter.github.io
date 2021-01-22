@@ -6,14 +6,16 @@
     header h3 {font-size: 1.5rem;}
     
     /*----------- NAVIGATION --------------*/
-        nav ul {margin-left: 1rem;}
-        nav ul li {float: left;}
-        nav ul li a{
-            padding: .5rem 1rem;
-            font-size: 1.0rem;
+    nav ul {margin-left: 1rem; display: flex;}
+    nav ul li { flex: 1 1 100%;}
+    nav ul li a {
+        padding: .5rem 1rem;
+        font-size: 1.0rem;
         }
     
     /*----------- MAIN --------------*/
+    
+    /* update font size of headers to fit larger screen */
     h1 {font-size: 2rem;}
     h2 {font-size: 1.5rem;}
     h3 {font-size: 1.3rem;}
