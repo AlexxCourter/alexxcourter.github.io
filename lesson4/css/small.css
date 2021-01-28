@@ -1,0 +1,147 @@
+/* apply box layout to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Default styles */
+
+h1 {font-size: 1.3rem; font-family: 'Righteous', sans-serif;}
+
+h2 {font-size:1.2rem; font-family: 'Mukta', sans-serif;}
+
+h3 {font-size:1.0rem; font-family: 'Mukta', sans-serif;}
+
+p, ol, button {font-size: 16px; font-family: 'Mukta', sans-serif;}
+
+.white-text {color: #FFFFFF;}
+
+main {background-color: #F5F5F5;}
+
+main, footer {
+    padding: 1rem;
+}
+
+/* Header styles */
+header {
+    padding: 1rem;
+    background-color: #162F33;
+}
+
+header h1 {
+    font-family: 'Righteous', sans-serif;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header img {
+    float: left;
+    width: 50px;
+    margin-right: 1rem;
+    border-radius: 9px;
+}
+
+/* navigation */
+
+nav {background-color: #162F33;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color:  #3AD4F0;
+    color: #000000
+}
+
+nav ul li.active-page a {
+    background-color:#045462;
+    color: #fff; /* removes a hover color error on text */
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/* main styles */
+
+img {max-width: 100%;}
+
+img.hero {
+    min-width: 100%
+}
+
+.five-day {
+    /* temporary placeholder styles */
+    padding: 2rem;
+    margin: 2rem 1rem;
+    background-color: rgba(0,0,0,0.3)
+}
+
+article.forecast-article {
+    border-radius: 10px;
+    background-color: #FFF;
+    padding: 1rem;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+article h3 {
+    /* fix heading to edges of article */
+    margin: -1rem -1rem 0 -1rem;
+
+    background-color: #045462;
+    color: #FFF;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article h3 a {
+    color: #FFF;
+}
+
+img.credit-img {
+    display: block;
+    max-width: 320px;
+    margin: 1rem auto;
+}
+
+section.contact {
+    background-color: #045462;
+    color: #FFF;
+    padding: 1rem;
+    margin: 1rem -1rem -1rem -1rem;
+}
+
+/* footer styles */
+
+footer {background-color: #162F33; color: #ffffff;}
+footer a {color:#ffffff;}
+footer p {text-align: center;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

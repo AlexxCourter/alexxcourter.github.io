@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan home page for Meteorolgy Station">
+    <meta name="author" content="Alex Courter">
+    <title>Meteorology Station - Connect with your community and watch the weather together</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header: logo, site title, and motto -->
+    <header>
+        <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+        <h1 class="white-text">Meteorology Station</h1>
+        <h2 class="white-text">Weather together.</h2>
+    </header>
+    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="headNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active-page"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+     <!-- main: page content -->
+    <main>
+        <h1>Preston Idaho</h1> 
+        <img class="hero" src="images/alex-bertha-I6K8vg7rY98-unsplash.jpg" alt="placeholder hero">
+        <!-- weather summary -->
+        <h2>Weather Summary</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, voluptates.</p>
+        <!-- Five day forecast section -->
+        <section class="five-day">
+            <h2>Five Day forecast</h2>
+        </section>
+        <!-- articles section -->
+        <article class="forecast-article">
+            <h3>Article Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, molestiae?</p>
+            <img src="images/alex-bertha-I6K8vg7rY98-unsplash.jpg" alt="placeholder article photo">
+        </article>
+        <!-- contact info section -->
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>email@example</p>
+            <p>000-000-0000</p>
+            <img src="images/alex-bertha-I6K8vg7rY98-unsplash.jpg" alt="map placeholder">
+        </section>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a></p>
+        <p id="today-date"></p>
+    </footer>
+
+<!-- call scripts for menu and footer date -->
+<script src="js/scripts.js"></script>
+</body>
+</html>
