@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site plan home page for Meteorolgy Station">
+    <meta name="description" content="Image credits for images used on Meteorolgy Station">
     <meta name="author" content="Alex Courter">
-    <title>Meteorology Station - Preston Town - Connect with your community and watch the weather together</title>
+    <title>Meteorology Station - Image credits - Connect with your community and watch the weather together</title>
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
@@ -20,46 +20,32 @@
     <link href="css/large.css" rel="stylesheet">
 </head>
 <body>
-    <!-- header: logo, site title, and motto -->
     <header>
         <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
         <h1 class="white-text">Meteorology Station</h1>
         <h2 class="white-text">Weather together.</h2>
     </header>
-    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="headNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li class="active-page"><a href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-     <!-- main: page content -->
     <main>
-        <h1>Preston Idaho</h1> 
-        <img class="hero" src="images/alex-bertha-I6K8vg7rY98-unsplash.jpg" alt="placeholder hero">
-        <!-- weather summary -->
-        <section class="five-day">
-            <h2>Weather summary placeholder</h2>
-        </section>
-        <!-- Five day forecast section -->
-        <section class="five-day">
-            <h2>Five Day forecast placeholder</h2>
-        </section>
+        <!-- page content -->
+        <h2>Image Credits</h2>
         <!-- articles section -->
-        <section class="five-day">
-            <h2>Article placeholder</h2>
-        </section>
+        <article class="forecast-article">
+            <h3><span>Photo by <a href="https://unsplash.com/@alexbertha?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alex Bertha</a> on <a href="https://unsplash.com/s/photos/idaho?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></h3>
+            <img class="credit-img" src="images/alex-bertha-I6K8vg7rY98-unsplash.jpg" alt="Preston Idaho Hero placeholder">
+        </article>
         <!-- contact info section -->
-        <section class="five-day">
-            <h2>Contact info placeholder</h2>
-        </section>
     </main>
-    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
     <footer>
         <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a></p>
         <p id="today-date"></p>
