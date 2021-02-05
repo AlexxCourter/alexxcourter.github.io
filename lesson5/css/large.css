@@ -22,11 +22,5 @@
           max-width: 64rem;
           margin: 0 auto;
       }
-    
-      /*------------ footer -------------- */
-      .contact img {
-          width: 30rem;
-          float: right;
-        }
 
 } /* end of media query */
