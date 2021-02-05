@@ -113,7 +113,7 @@ img.hero {width: 100%;}
     grid-column-gap: 0.3rem;
 }
 
-.w-summary h3 {grid-column: -1/1;}
+.w-summary div.title {grid-column: -1/1; font-family: 'Mukta', sans-serif;}
 
 .w-summary p {
     grid-column: 1;
@@ -122,7 +122,7 @@ img.hero {width: 100%;}
 
 .w-summary div {grid-column: 2;}
 
-.w-summary p, .w-summary h3, .w-summary div {margin: 4px;}
+.w-summary p, .w-summary p.title, .w-summary div {margin: 4px;}
 
 /* -------- Five day forecast ---------- */
 
