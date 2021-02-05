@@ -2,7 +2,7 @@
 
       /*----------- NAVIGATION --------------*/
       /* display nav normally for large screens */
-      nav ul, nav ul.hide {margin-left: 1rem; display: flex;}
+      nav ul, nav ul.hide {display: flex;}
       /* added .hide class to fix error with hidden nav when menu is collapsed */
       nav ul li { flex: 1 1 100%;}
       nav ul li a {
@@ -16,9 +16,17 @@
 
       /* ------------MAIN------------- */
 
-      main, footer {
+      .hero-section {height: 450px;}
+
+      header div.header-container, nav div.nav-container, main, footer {
           max-width: 64rem;
           margin: 0 auto;
       }
     
+      /*------------ footer -------------- */
+      .contact img {
+          width: 30rem;
+          float: right;
+        }
+
 } /* end of media query */
