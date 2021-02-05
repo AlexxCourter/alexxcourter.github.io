@@ -46,10 +46,11 @@ nav ul {
 
 nav button {
     display: block;
-    margin: 0 1rem;
+    margin: 0 0 0.3rem 1rem;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
+    padding: 0;
     color: #FFFFFF;
 }
 
@@ -179,11 +180,11 @@ section.contact img {
 
 .social-container {
     display: flex;
+    justify-content: center;
     background-color:#FFF; 
     margin-top: 1rem;
-    padding-left: 1rem;
     border-radius: 40px; 
-    max-width: 50%;
+    max-width: 40%;
 }
 .social-container img {width: 29px; margin: 0.5rem;}
 
