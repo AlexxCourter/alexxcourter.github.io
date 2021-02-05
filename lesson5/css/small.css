@@ -80,10 +80,11 @@ main h1 {margin-left: 1rem;}
 
 div#message {
     background: linear-gradient(to bottom, lightyellow, gold);
-    padding: 0.5rem 1rem;
+    padding: 0.8rem;
     font-weight: bold;
     text-align: center;
 }
+div#message p {font-size: 1.3rem; margin: 0;}
 
 div.showme {display: block;}
 div.hideme {display: none;}
@@ -175,6 +176,16 @@ i {
 section.contact img {
     margin-top: 1rem;
 }
+
+.social-container {
+    display: flex;
+    background-color:#FFF; 
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-radius: 40px; 
+    max-width: 50%;
+}
+.social-container img {width: 29px; margin: 0.5rem;}
 
 /* footer styles */
 
