@@ -193,6 +193,7 @@ section.contact img {
 footer {background-color: #162F33; color: #ffffff;}
 footer a {color:#ffffff;}
 footer p {text-align: center;}
+.contact img.map {display: none;}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

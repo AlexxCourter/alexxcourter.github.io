@@ -49,4 +49,6 @@
         grid-row: 2;
     }
 
+    .contact img.map {display: block;}
+
     } /* end of media query */
