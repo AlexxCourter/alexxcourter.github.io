@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston town information for Meteorolgy Station">
+    <meta name="author" content="Alex Courter">
+    <title>Meteorology Station - Preston Town - Connect with your community and watch the weather together</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/meteorology-station-logo.ico">
+
+    <!-- STYLE SHEETS -->
+    <!-- normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div id="message"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <!-- header: logo, site title, and motto -->
+    <header>
+        <!-- below div for styling background of header -->
+        <div class="header-container">
+            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <h1 class="white-text">Meteorology Station</h1>
+            <h2 class="white-text">Weather together.</h2>
+        </div>
+    </header>
+    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
+    <nav class="clearfix">
+        <!-- below div for styling background of nav-->
+        <div class="nav-container">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="headNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active-page"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+        </div>
+    </nav>
+     <!-- main: page content -->
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="images/responsive-hero/wdd230_image_franklin-400w-text.jpeg">
+                <source media="(max-width: 600px)" srcset="images/responsive-hero/wdd230_image_franklin-600w-text.jpeg">
+                <source media="(min-width: 960px)" srcset="images/responsive-hero/wdd230_image_franklin-960w-text.jpeg">
+                <!-- default -->
+                <img class="hero" src="images/responsive-hero/wdd230_image_franklin-960w-text.jpeg" alt="placeholder hero">
+            </picture>
+            <!-- weather summary -->
+            <div class="w-summary">
+                <div class="title">Weather Summary</div>
+                <!-- div will be populated with data. currently placeholders -->
+                <p>Currently:</p><div><span id="temp">50</span>&deg; F</div>
+                <p>High:</p><div>65&deg; F</div>
+                <p>Low:</p><div>39&deg; F</div>
+                <p>Wind:</p><div><span id="speed">11</span> mph</div>
+                <p>Wind Chill:</p><div><span id="chill">message</span></div>
+            </div>
+        </div> 
+        <!-- Five day forecast section. Hidden on small screens -->
+        <section class="five-day">
+            <h2>Five Day forecast</h2>
+            <div>
+                <p>Monday</p>
+                <img src="images/sunny-icon.png" alt="sunny icon">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <p>Tuesday</p>
+                <img src="images/rain-icon.png" alt="rain icon">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <p>Wednesday</p>
+                <img src="images/rain-icon.png" alt="rain icon">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <p>Thursday</p>
+                <img src="images/snow-icon.png" alt="snow icon">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <p>Friday</p>
+                <img src="images/sunny-icon.png" alt="sunny icon">
+                <p>40&deg;</p>
+            </div>
+        </section>
+        <!-- articles section -->
+        <article class="forecast-article">
+            <h2>Camping season coming soon</h2>
+            <img src="images/chris-holder-uY2UIyO5o5c-unsplash.jpg" alt="placeholder article photo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, nulla ducimus! Minus, vero fuga itaque nesciunt dignissimos asperiores aspernatur possimus, praesentium consequatur odio harum corporis voluptatibus dicta. Reprehenderit id aperiam eveniet ab amet corrupti obcaecati nesciunt, est molestiae suscipit nobis cumque maiores voluptates iure. Ut accusantium numquam asperiores illum iusto perspiciatis quibusdam fuga, libero corporis ullam, totam praesentium quas itaque harum, molestiae cumque et tempora repellat voluptatum corrupti dolores officiis saepe? Aliquam qui tenetur quo ea repellat blanditiis doloremque totam quos inventore, laborum nulla, dolores amet ex quaerat voluptas consequatur cum rem fuga sunt cumque quasi animi ipsam. Fugit libero mollitia illo cupiditate, modi nostrum necessitatibus dolorem. Iste assumenda nihil, qui, at deleniti, aspernatur perferendis architecto quod optio soluta veniam? Mollitia excepturi maxime nostrum nam aspernatur laboriosam iusto magni nobis, ipsam facilis animi provident, dicta ea possimus veritatis maiores fuga ab voluptas nemo, harum rem assumenda adipisci ullam porro. Natus magni cumque neque iste animi, fugit ut, velit nulla suscipit asperiores delectus aut modi? Eos, optio. Perferendis harum voluptatum suscipit explicabo, minus facilis atque quia quae temporibus tempora quam soluta. Labore fuga in odit ullam velit iste reiciendis sequi dolore tempore sed, facilis eos, similique ipsam accusantium soluta quas at?</p>
+            <span class="clearfix"></span>
+        </article>
+        <!-- contact info section -->
+        <section class="contact medium-grid">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <p><i class="material-icons">mail</i>contact@meteorologystation.com</p>
+                <p><i class="material-icons">phone</i>000-000-0000</p>
+                <p><i class="material-icons">house</i>Address: </p>
+                <p>Meteorology Station<br> 123 Snow Lane<br> Example, ID 00000</p>
+                <div class="social-container">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/f_logo_RGB-Black_58.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <img class="map" src="images/preston-map.png" alt="map placeholder">
+        </section>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a></p>
+        <p id="today-date"></p>
+    </footer>
+
+<!-- call scripts for menu and footer date -->
+<script src="js/scripts.js"></script>
+<script src="js/windchill.js"></script>
+<!-- webfontloader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/font.js"></script>
+</body>
+</html>

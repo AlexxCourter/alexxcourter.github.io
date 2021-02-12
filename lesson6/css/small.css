@@ -1,0 +1,194 @@
+/* apply box layout to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Default styles */
+
+h1 {font-size: 1.3rem; font-family: 'Righteous', sans-serif;}
+
+h2 {font-size:1.2rem; font-family: 'Mukta', sans-serif;}
+
+h3 {font-size:1.0rem; font-family: 'Mukta', sans-serif;}
+
+p, ol, button {font-size: 16px; font-family: 'Mukta', sans-serif;}
+
+.white-text {color: #FFFFFF;}
+
+main {background-color: #F5F5F5;}
+
+main, footer {padding: 1rem 0;}
+
+/* Header styles */
+header {
+    padding: 1rem;
+    background-color: #162F33;
+}
+
+header h1 {font-family: 'Righteous', sans-serif;}
+header h1, header h2 {margin: 0;}
+
+header img {
+    float: left;
+    width: 50px;
+    margin-right: 1rem;
+    border-radius: 9px;
+}
+
+/* navigation */
+
+nav {background-color: #162F33;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    display: block;
+    margin: 0 0 0.3rem 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    padding: 0;
+    color: #FFFFFF;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color:  #3AD4F0;
+    color: #000000
+}
+
+nav ul li.active-page a {
+    background-color:#045462;
+    color: #fff; /* removes a hover color error on text */
+}
+
+nav ul.hide {display: none;}
+
+/* main styles */
+main h1 {margin-left: 1rem;}
+
+div#message {
+    background: linear-gradient(to bottom, lightyellow, gold);
+    padding: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+div#message p {font-size: 1.3rem; margin: 0;}
+div.showme {display: block;}
+div.hideme {display: none;}
+
+img {max-width: 100%;}
+img.hero {width: 100%;}
+
+/* weather summary section */
+.hero-section {
+    position: relative; 
+    max-width: 64rem; /*max width of content in large screen*/ 
+    height: 270px; 
+    overflow: hidden;
+}
+
+.w-summary {
+    position: absolute; 
+    top: 0.2rem; 
+    left: 1rem;
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    margin: 0.2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    grid-column-gap: 0.3rem;
+}
+
+.w-summary div.title {grid-column: -1/1; font-family: 'Mukta', sans-serif; font-weight: bold;}
+
+.w-summary p {
+    grid-column: 1;
+    justify-self: right;
+}
+
+.w-summary div {grid-column: 2;}
+.w-summary p, .w-summary p.title, .w-summary div {margin: 4px;}
+
+/* -------- Five day forecast ---------- */
+
+.five-day {display: none;} /* does not display on small screens */
+
+
+/* -------- Article section ---------- */
+
+article.forecast-article {
+    border-radius: 10px;
+    background-color: #FFF;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+article.forecast-article img {display: block; width: 100%; margin-top: 1rem;}
+article.forecast-article h2 {
+    /* fix heading to edges of article */
+    margin: -1rem -1.01rem 0 -1rem;
+
+    background-color: #045462;
+    color: #FFF;
+    padding: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contact-container p {margin: 0.5rem 0 0 0;}
+.contact-container p:nth-of-type(4) {margin: 0;}
+
+img.credit-img {
+    display: block;
+    max-width: 320px;
+    margin: 1rem auto;
+}
+
+section.contact {
+    background-color: #045462;
+    color: #FFF;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+
+i {padding-right: 0.5rem;}
+section.contact img {margin-top: 1rem;}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    background-color:#FFF; 
+    margin-top: 1rem;
+    border-radius: 40px; 
+    max-width: 40%;
+}
+.social-container img {width: 29px; margin: 0.5rem;}
+
+/* footer styles */
+
+footer {background-color: #162F33; color: #ffffff;}
+footer a {color:#ffffff;}
+footer p {text-align: center;}
+.contact img.map {display: none;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
