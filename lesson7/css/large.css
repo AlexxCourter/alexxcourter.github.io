@@ -28,6 +28,5 @@
         grid-template-columns: 1fr 1fr 1fr /* 3 column for laptops, large media */
     }
       div.gallery picture:hover {box-shadow: 0 0 15px 2px rgba(0,0,0,0.7);}
-      div.gallery picture p {display: block; margin-left: 1rem;}
       
 } /* end of media query */
