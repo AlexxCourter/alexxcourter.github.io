@@ -27,6 +27,6 @@
       div.gallery {
         grid-template-columns: 1fr 1fr 1fr /* 3 column for laptops, large media */
     }
-      div.gallery picture:hover {box-shadow: 0 0 15px 2px rgba(0,0,0,0.7);}
+      div.gallery figure:hover {box-shadow: 0 0 15px 2px rgba(0,0,0,0.7);}
       
 } /* end of media query */

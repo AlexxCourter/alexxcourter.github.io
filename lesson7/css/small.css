@@ -9,7 +9,7 @@ h2 {font-size:1.2rem; font-family: 'Mukta', sans-serif;}
 
 h3 {font-size:1.0rem; font-family: 'Mukta', sans-serif;}
 
-p, ol, button {font-size: 16px; font-family: 'Mukta', sans-serif;}
+p, ol, button, figcaption {font-size: 16px; font-family: 'Mukta', sans-serif;}
 
 .white-text {color: #FFFFFF;}
 
@@ -109,7 +109,7 @@ img.hero {width: 100%;}
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 10px;
-    grid-column-gap: 0.3rem;
+    column-gap: 0.3rem;
 }
 
 .w-summary div.title {grid-column: -1/1; font-family: 'Mukta', sans-serif; font-weight: bold;}
@@ -201,20 +201,20 @@ div.gallery {
     margin: 1rem;
 }
 
-div.gallery picture {max-width: 100%; background-color: #FFFFFF; box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);}
+div.gallery figure {width: 100%; margin: 0; background-color: #FFFFFF; box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);}
 
-div.gallery picture img {
+div.gallery figure img {
     width: 100%;
     margin: 0;
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-div.gallery picture img[data-src] {
+div.gallery figure img[data-src] {
     filter: blur(0.2em);
 }
 
-div.gallery picture p {display: block; margin-left: 1rem;}
+div.gallery figure figcaption {display: block; margin: 0.5rem 1rem;}
 
 
 
