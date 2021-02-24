@@ -1,7 +1,9 @@
 WebFont.load({
     google: {
       families: [
-         'Ubuntu'
+         'Ubuntu',
+         'Mukta',
+         'Righteous'
       ]
     }
   });
