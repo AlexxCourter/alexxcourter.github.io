@@ -1,0 +1,18 @@
+table {box-shadow: 10px 10px 15px #628ca6; margin: 0 auto; border-spacing: 0;}
+
+th, td {text-align: center; border: 1px solid #c2c4c3; font-family: 'Ubuntu', sans-serif; padding: 0.5rem;}
+
+th {font-weight: bold;}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+tbody tr {background-color: #e7f0ed;}
+
+thead tr:first-child th {background-color: #7fb9c2; color: black; font-size: 1.5rem;}
+thead tr th {background-color: #628ca6; color: white;}
+tfoot tr td {background-color: #7fb9c2; font-size: 0.8rem;}
+
+td.emphasized {background-color: #628ca6; color: white;}
+
+/* color scheme: #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 */
