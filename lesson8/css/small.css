@@ -17,6 +17,8 @@ main {background-color: #F5F5F5;}
 
 main, footer {padding: 1rem 0;}
 
+main p.thanks {margin-left: 1rem;}
+
 /* Header styles */
 header {
     padding: 1rem;
