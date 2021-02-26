@@ -246,7 +246,6 @@ form label.top {
 }
 
 form label.top input, form label.top select, form label.top textarea {
-    -webkit-appearance: none;
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
