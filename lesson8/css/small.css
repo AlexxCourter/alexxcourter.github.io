@@ -221,7 +221,7 @@ div.gallery figure figcaption {display: block; margin: 0.5rem 1rem;}
 /* --------- FORM --------- */
 form fieldset {
     margin: 2rem 0.5rem;
-    border: 1px solid #445ba9;
+    border: 1px dashed #045462;
     border-radius: 10px;
     padding: 0.5rem 2%;
 }
@@ -231,7 +231,7 @@ form fieldset label:last-of-type {
 }
 
 form legend {
-    color: #445ba9;
+    color: #045462;
     font-family: 'Mukta', sans-serif;
     margin: 0 1rem;
     padding: 0 0.5rem;
@@ -280,13 +280,25 @@ form input.submitBtn {
 }
 
 form label.top input:required {
-    border-left: red solid 6px;
+    border: red solid 2px;
 }
 
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border: green solid 2px;
+    background-color: rgba(0, 201, 73, 0.2)
 }
 
 form div {margin-top: 1rem; font-family: 'Mukta', sans-serif;}
 
+/* HIDE NUMBER SPINNER for zip code */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

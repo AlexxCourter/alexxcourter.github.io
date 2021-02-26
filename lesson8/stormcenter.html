@@ -51,12 +51,11 @@
      <!-- main: page content -->
     <main>
         <h1>Report a Storm</h1>
-        <!-- form template. Edit all items to ensure they are the proper items  -->
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Reporter information</legend>
-                <label class="top">Full Name* <input type="text" name="fname" required></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="123456789"></label>
+                <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-zA-za-Z] {5,}" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="123456789" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="top">Zip Code <input type="number" name="zip" required></label>
             </fieldset>
@@ -64,14 +63,23 @@
             <fieldset>
                 <legend>Storm Information</legend>
                 <label class="top">Storm Date <input type="date" name="stormDate"></label>
+
+                <label class="top">Storm Type <input list="storm-types"></label>
+                <datalist id="storm-types">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
                 
                 <label class="sbs severity">Storm Severity &nbsp;&nbsp;&nbsp;
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <input type="range" name="severity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
 
                 <label class="top">Storm Region 
-                    <select name="subject">
+                    <select name="region">
                         <option disabled>Select Region</option>
                         <option value="preston">Preston</option>
                         <option value="soda-springs">Soda Springs</option>
@@ -87,7 +95,7 @@
                 <label class="top">Additional comments <textarea name="comment" cols="30" rows="10"></textarea></label>
             </fieldset>
     
-            <input class="submitBtn" type="submit" value="report-storm">
+            <input class="submitBtn" type="submit" value="Report Storm">
     
         </form>
     </main>
