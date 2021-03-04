@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston town information for Meteorolgy Station">
+    <meta name="author" content="Alex Courter">
+    <title>Meteorology Station - Preston Town - Connect with your community and watch the weather together</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/meteorology-station-logo.ico">
+
+    <!-- STYLE SHEETS -->
+    <!-- normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div id="message"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <!-- header: logo, site title, and motto -->
+    <header>
+        <!-- below div for styling background of header content -->
+        <div class="header-container">
+            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <h1 class="white-text">Meteorology Station</h1>
+            <h2 class="white-text">Weather together.</h2>
+        </div>
+    </header>
+    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
+    <nav class="clearfix">
+        <!-- below div for styling background of nav-->
+        <div class="nav-container">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="headNav" class="hide">
+            <li class="active-page"><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+        </div>
+    </nav>
+     <!-- main: page content -->
+    <main>
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="images/home/home-banner-400x267-small.jpg">
+                <source media="(max-width: 600px)" srcset="images/home/home-banner-600x250-med.jpg">
+                <source media="(min-width: 960px)" srcset="images/home/home-banner-960x400-large.jpg">
+                <!-- default -->
+                <img class="hero" src="images/home/home-banner-960x400-large.jpg" alt="home hero banner">
+            </picture>
+        </div> 
+        <!-- Home page content -->
+        <div class="town-cards"></div>
+        <!-- articles section - replace with home page content -->
+        <article class="forecast-article">
+            <h2>What to expect from Meteorology Station</h2>
+            <aside><p>We make it our purpose to provide clear information for local weather and events to help keep your community connected.</p></aside>
+            <p>The Meteorology Station is a place where we "weather together", meaning, we make weather reports and other features of the site community-driven to provide a socially uplifting environment. We do this to ensure that:
+                <ol>
+                    <li>No one gets caught in the rain, because that's no fun.</li>
+                    <li>Local events get publicity to attract interested members of the community; its a win-win situation!</li>
+                    <li>To create a social environment for weather, events, and more, different from any traditional weather site.</li>
+                </ol>
+            </p>
+            <span class="clearfix"></span>
+        </article>
+        <!-- contact info section -->
+        <section class="contact medium-grid">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <p><i class="material-icons">mail</i>contact@meteorologystation.com</p>
+                <p><i class="material-icons">phone</i>000-000-0000</p>
+                <p><i class="material-icons">house</i>Address: </p>
+                <p>Meteorology Station<br> 123 Snow Lane<br> Example, ID 00000</p>
+                <div class="social-container">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/f_logo_RGB-Black_58.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <img class="map" src="images/preston-map.png" alt="map placeholder">
+        </section>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a></p>
+        <p id="today-date"></p>
+    </footer>
+
+<!-- call scripts for menu and footer date -->
+<script src="js/scripts.js"></script>
+<!-- <script src="js/windchill.js"></script> -->
+<script src="js/town-data.js"></script>
+<!-- webfontloader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/font.js"></script>
+</body>
+</html>

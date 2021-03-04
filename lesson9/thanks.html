@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preston town information for Meteorolgy Station">
+    <meta name="author" content="Alex Courter">
+    <title>Meteorology Station - Storm reporting center - Connect with your community and watch the weather together</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/meteorology-station-logo.ico">
+
+    <!-- STYLE SHEETS -->
+    <!-- normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div id="message"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <!-- header: logo, site title, and motto -->
+    <header>
+        <!-- below div for styling background of header -->
+        <div class="header-container">
+            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <h1 class="white-text">Meteorology Station</h1>
+            <h2 class="white-text">Weather together.</h2>
+        </div>
+    </header>
+    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
+    <nav class="clearfix">
+        <!-- below div for styling background of nav-->
+        <div class="nav-container">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="headNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+        </div>
+    </nav>
+     <!-- main: page content -->
+    <main>
+        <h1>Thank you</h1>
+        <p class="thanks">your storm report has been recorded successfully.</p>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a></p>
+        <p id="today-date"></p>
+    </footer>
+
+<!-- call page wide scripts -->
+<script src="js/scripts.js"></script>
+<!-- progressive image loading -->
+<script src="js/lazy-load.js"></script>
+<!-- webfontloader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/font.js"></script>
+</body>
+</html>
