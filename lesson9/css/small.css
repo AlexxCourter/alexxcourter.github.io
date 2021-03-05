@@ -210,14 +210,14 @@ div.gallery {
 
 div.gallery figure {width: 100%; margin: 0; background-color: #FFFFFF; box-shadow: 0 0 3px 1px rgba(0,0,0,0.3);}
 
-div.gallery figure img {
+div.gallery figure img, div.town-cards section img {
     width: 100%;
     margin: 0;
     filter: blur(0em);
     transition: filter 0.5s;
 }
 
-div.gallery figure img[data-src] {
+div.gallery figure img[data-src], div.town-cards section img[data-src] {
     filter: blur(0.2em);
 }
 

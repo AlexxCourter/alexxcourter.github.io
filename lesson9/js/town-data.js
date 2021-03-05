@@ -10,7 +10,6 @@ fetch(refURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const towns = jsonObject['towns'];
-    // if (towns.name == "Fish Haven" | towns.name == "Preston" | towns.name == "Soda Springs") {
     for (let i = 0; i < towns.length; i++) {
         if (towns[i].name == "Preston" | towns[i].name == "Soda Springs" | towns[i].name == "Fish Haven") {
             //create the card elements for each town
@@ -24,9 +23,10 @@ fetch(refURL)
             let p3 = document.createElement('p'); // annual rain fall
             let image = document.createElement('img');
             
-            //set src and alt attributes of the img
+            //set data-src, src (for loading img) and alt attributes of each image
             image.setAttribute('src', "images/home/" + towns[i].photo); //name photos the same as in JSON file
             image.setAttribute('alt', towns[i].name + " - Founded: " + towns[i].yearFounded);
+            image.setAttribute('loading', 'lazy')
 
             h2.textContent = towns[i].name;
             p0.textContent = towns[i].motto;
@@ -46,5 +46,4 @@ fetch(refURL)
             document.querySelector('div.town-cards').appendChild(card);
     }
     }
-// }
     });
