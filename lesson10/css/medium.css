@@ -1,0 +1,93 @@
+@media only screen and (min-width: 35rem) {
+
+    /*----------- HEADER --------------*/
+    header img {width: 75px;}
+    header h1 {font-size: 2rem;}
+    header h3 {font-size: 1.5rem;}
+    
+    /*----------- MAIN --------------*/
+    
+    /* update font size of headers to fit larger screen */
+    h1 {font-size: 2rem;}
+    h2 {font-size: 1.5rem;}
+    h3 {font-size: 1.3rem;}
+
+    .hero-section {height: 300px;}
+
+    .five-day {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /*five columns*/
+    padding: 2rem;
+    margin: 2rem 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    column-gap: 0.5rem;
+    }
+
+    .five-day div:hover {border: none; box-shadow: 0 0 20px grey;}
+
+    article.forecast-article img, article.forecast-article aside {float: right; max-width: 50%; margin: 1rem 0 0 1rem;}
+    article.forecast-article aside {padding: 0 1rem;}
+    .medium-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    .medium-grid h2 {grid-row: 1; grid-column: 1/-1;}
+    .medium-grid p, .medium-grid div {grid-row: 3; grid-column: 1;}
+    .medium-grid img {grid-row: 3; margin-top: 1rem; justify-self: right;}
+
+    section.five-day h2 {
+        grid-column: 1/-1;
+    }
+
+    section.five-day div {
+        text-align: center;
+        border: 3px solid #045462;
+        border-radius: 3px;
+        grid-row: 2;
+    }
+
+    .contact img.map {display: block;}
+
+
+    div.gallery {
+        grid-template-columns: 1fr 1fr /* 2 column for tablets, medium media */
+    }
+
+    div.town-cards section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    div.town-cards section div:first-of-type, div.town-cards section div:last-of-type {
+        grid-column: 1;
+        margin: 0;
+        padding: 1rem 1rem 0.5rem 1rem;
+        background: linear-gradient(#162F33, #045462);
+        color: white;
+        border-radius: 5px;
+    }
+
+    div.town-cards section div p {
+        font-size: 1rem;
+    }
+
+    div.town-cards section:nth-of-type(even) div {
+        grid-column: 2;
+    }
+
+    div.town-cards section:nth-of-type(even) img {
+        grid-column: 1;
+    }
+
+    div.town-cards section img {
+        grid-column: 2;
+        grid-row: 1/-1;
+
+    }
+
+    } /* end of media query */

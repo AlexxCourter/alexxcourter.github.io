@@ -1,0 +1,62 @@
+@media only screen and (min-width: 64rem) {
+
+      /*----------- NAVIGATION --------------*/
+      /* display nav normally for large screens */
+      nav ul, nav ul.hide {display: flex;}
+      /* added .hide class to fix error with hidden nav when menu is collapsed */
+      nav ul li { flex: 1 1 100%;}
+      nav ul li a {
+          padding: .5rem 1rem;
+          font-size: 1.0rem;
+          }
+
+      nav button {
+          display: none;
+      }
+
+      /* ------------MAIN------------- */
+
+      .hero-section {height: 450px;}
+
+      header div.header-container, nav div.nav-container, main, footer {
+          max-width: 960px;
+          margin: 0 auto;
+      }
+
+
+      div.gallery {
+        grid-template-columns: 1fr 1fr 1fr /* 3 column for laptops, large media */
+    }
+      div.gallery figure:hover {box-shadow: 0 0 15px 2px rgba(0,0,0,0.7);}
+
+      div.town-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* overwrites medium styles */
+    div.town-cards section div:first-of-type {
+        background: linear-gradient(#162F33, #045462);
+        color: white;
+        margin: -1rem -1rem 0.5rem -1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
+        border-radius: 5px 5px 0 0;
+    }
+
+    div.town-cards section div:first-of-type p {
+        font-size: 0.8rem;
+    }
+
+    div.town-cards section div:last-of-type {
+        background: none;
+        color: black;
+        margin: 0;
+        padding: 0 0 0.5rem 0;
+    }
+
+    div.town-cards section{display: block;}
+
+    div.town-cards section div {
+        margin: -1rem -1rem 0.5rem -1rem;
+    }
+      
+} /* end of media query */
