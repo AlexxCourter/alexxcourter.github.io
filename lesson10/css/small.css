@@ -116,7 +116,7 @@ img.hero {width: 100%;}
 }
 
 .w-summary div.title {grid-column: -1/1; font-family: 'Mukta', sans-serif; font-weight: bold;}
-
+.w-summary p:first-of-type {grid-column: -1/1; justify-self: left;}
 .w-summary p {
     grid-column: 1;
     justify-self: right;

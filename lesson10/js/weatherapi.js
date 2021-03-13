@@ -15,15 +15,15 @@ fetch(apiURL)
     /*******************
      * WEATHER SUMMARY *
      *******************/
+
+    //weather description
+    document.getElementById('current-weather').textContent = jsObject.weather[0].description;
     //temperatures
     document.getElementById('current-temp').textContent = jsObject.main.temp; //currently
     document.getElementById('high-temp').textContent = jsObject.main.temp_max; //High
     document.getElementById('low-temp').textContent = jsObject.main.temp_min; //Low
-
-    
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    
+    //humidity
+    document.getElementById('humidity').textContent = `${jsObject.main.humidity}%` ;
     //wind speed
     document.getElementById('speed').textContent = jsObject.wind.speed; //wind
 
