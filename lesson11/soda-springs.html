@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soda Springs town information for Meteorolgy Station">
+    <meta name="author" content="Alex Courter">
+    <title>Meteorology Station - Preston Town - Connect with your community and watch the weather together</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/meteorology-station-logo.ico">
+
+    <!-- STYLE SHEETS -->
+    <!-- normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div id="message"><p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p></div>
+    <!-- header: logo, site title, and motto -->
+    <header>
+        <!-- below div for styling background of header -->
+        <div class="header-container">
+            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <h1 class="white-text">Meteorology Station</h1>
+            <h2 class="white-text">Weather together.</h2>
+        </div>
+    </header>
+    <!-- Navigation: dynamic menu button, links to home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery pages -->
+    <nav class="clearfix">
+        <!-- below div for styling background of nav-->
+        <div class="nav-container">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="headNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active-page"><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+        </div>
+    </nav>
+     <!-- main: page content -->
+    <main>
+        <h1 id="town-name">Soda Springs</h1>
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="images/soda-springs/soda-springs-banner-400x167.jpg">
+                <source media="(max-width: 600px)" srcset="images/soda-springs/soda-springs-banner-600x250.jpg">
+                <source media="(min-width: 960px)" srcset="images/soda-springs/soda-springs-banner-960x400.jpg">
+                <!-- default -->
+                <img class="hero" src="images/soda-springs/soda-springs-banner-960x400.jpg" alt="placeholder hero">
+            </picture>
+            <!-- weather summary -->
+            <div class="w-summary">
+                <div class="title">Weather Summary</div>
+                <!-- div will be populated with data. currently placeholders -->
+                <p id="current-weather"></p>
+                <p>Currently:</p><div><span id="current-temp"></span>&deg; F</div>
+                <p>High:</p><div><span id="high-temp"></span>&deg; F</div>
+                <p>Low:</p><div><span id="low-temp"></span>&deg; F</div>
+                <p>Humidity:</p><div id="humidity"></div>
+                <p>Wind:</p><div><span id="speed"></span> mph</div>
+                <p>Wind Chill:</p><div><span id="chill">message</span></div>
+            </div>
+        </div> 
+        <!-- Five day forecast section. Hidden on small screens -->
+        <section class="five-day" id="five-day">
+            <h2>Five Day forecast</h2>
+            <!-- populated automatically with weather data -->
+        </section>
+        <!-- articles section -->
+        <article class="forecast-article">
+            <h2>New summer attraction opening postponed one more year because of tornadoes</h2>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/soda-springs/soda-springs-article-small-256w.jpg">
+                <source media="(max-width: 600px)" srcset="images/soda-springs/soda-springs-article-medium-360w.jpg">
+                <source media="(max-width: 960px)" srcset="images/soda-springs/soda-springs-article-large-450w.jpg">
+                <!-- default -->
+                <img src="images/soda-springs/soda-springs-article-600w.jpg" alt="placeholder article photo">
+            </picture>
+            <p>Early in the start of the year, the new water park opening up in the heart of Soda Springs was scheduled to be open for patrons as early as June, but recent severe weather threats have caused a delay in construction. "We had to play it safe, despite high expectations, and have decided to postpone until next summer." Said the CEO of Super Waterland, Mark Splasher in an interview with Meteorology Station. "The tornadoes didn't end up reaching the park, so everything worked out in the end. We won't have to worry about any damage, and everyone is safe." He concluded that people would be understanding of the delay, and even promoted a special gift for early season-pass and ticket buyers who had already purchased tickets for the park. <br><br>Despite the let down of not being able to visit the attraction, locals are reacting exactly as Mr. Splasher predicted, and are even posting on social media about their anticipation for the grand opening.</p>
+            <span class="clearfix"></span>
+        </article>
+        <!-- contact info section -->
+        <section class="contact medium-grid">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <p><i class="material-icons">mail</i>contact@meteorologystation.com</p>
+                <p><i class="material-icons">phone</i>000-000-0000</p>
+                <p><i class="material-icons">house</i>Address: </p>
+                <p>Meteorology Station<br> 123 Snow Lane<br> Example, ID 00000</p>
+                <div class="social-container">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/f_logo_RGB-Black_58.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <img class="map" src="images/soda-springs/soda-springs-map.png" alt="map placeholder">
+        </section>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        <p>&copy; 2021 Alex Courter || <a href="../index.html">Portal Home</a> || <a href="image-credit.html">Image credits</a> || <a href="home-wireframes.html">Wireframes</a></p>
+        <p id="today-date"></p>
+        <p>Weather data provided by <a href="https://openweathermap.org/">openweathermap.org</a></p>
+    </footer>
+
+<!-- call scripts for menu and footer date -->
+<script src="js/scripts.js"></script>
+<script src="js/weatherapi.js"></script>
+<script src="js/windchill.js"></script>
+
+<!-- webfontloader -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script src="js/font.js"></script>
+</body>
+</html>
