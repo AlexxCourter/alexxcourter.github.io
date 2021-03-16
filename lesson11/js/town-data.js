@@ -8,7 +8,6 @@ fetch(refURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++) {
         if (towns[i].name == "Preston" | towns[i].name == "Soda Springs" | towns[i].name == "Fish Haven") {
@@ -23,7 +22,7 @@ fetch(refURL)
             let p3 = document.createElement('p'); // annual rain fall
             let image = document.createElement('img');
             
-            //set data-src, src (for loading img) and alt attributes of each image
+            //set src and alt attributes of each image, set images to lazy loading
             image.setAttribute('src', "images/home/" + towns[i].photo); //name photos the same as in JSON file
             image.setAttribute('alt', towns[i].name + " - Founded: " + towns[i].yearFounded);
             image.setAttribute('loading', 'lazy')
@@ -46,4 +45,5 @@ fetch(refURL)
             document.querySelector('div.town-cards').appendChild(card);
     }
     }
-    });
+
+    }); //END FETCH QUERY

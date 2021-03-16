@@ -77,9 +77,17 @@
             <h2>Five Day forecast</h2>
             <!-- populated automatically with weather data -->
         </section>
+        <!-- local events section -->
+        <div class="event-grid">
+            <img src="images/events.jpg" alt="event banner" loading="lazy">
+            <article id="events">
+                <h2>Upcoming Local Events:</h2>
+                <!-- populated automatically with preston town data -->
+            </article>
+        </div>
         <!-- articles section -->
         <article class="forecast-article">
-            <h2>Camping season coming soon</h2>
+            <h2>Your fishing checklist: Enjoy Fish Haven to the max</h2>
             <picture>
                 <source media="(max-width: 400px)" srcset="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-small-256w.jpg">
                 <source media="(max-width: 600px)" srcset="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-medium-360w.jpg">
@@ -87,7 +95,15 @@
                 <!-- default -->
                 <img src="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-600w.jpg" alt="placeholder article photo">
             </picture>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, nulla ducimus! Minus, vero fuga itaque nesciunt dignissimos asperiores aspernatur possimus, praesentium consequatur odio harum corporis voluptatibus dicta. Reprehenderit id aperiam eveniet ab amet corrupti obcaecati nesciunt, est molestiae suscipit nobis cumque maiores voluptates iure. Ut accusantium numquam asperiores illum iusto perspiciatis quibusdam fuga, libero corporis ullam, totam praesentium quas itaque harum, molestiae cumque et tempora repellat voluptatum corrupti dolores officiis saepe? Aliquam qui tenetur quo ea repellat blanditiis doloremque totam quos inventore, laborum nulla, dolores amet ex quaerat voluptas consequatur cum rem fuga sunt cumque quasi animi ipsam. Fugit libero mollitia illo cupiditate, modi nostrum necessitatibus dolorem. Iste assumenda nihil, qui, at deleniti, aspernatur perferendis architecto quod optio soluta veniam? Mollitia excepturi maxime nostrum nam aspernatur laboriosam iusto magni nobis, ipsam facilis animi provident, dicta ea possimus veritatis maiores fuga ab voluptas nemo, harum rem assumenda adipisci ullam porro. Natus magni cumque neque iste animi, fugit ut, velit nulla suscipit asperiores delectus aut modi? Eos, optio. Perferendis harum voluptatum suscipit explicabo, minus facilis atque quia quae temporibus tempora quam soluta. Labore fuga in odit ullam velit iste reiciendis sequi dolore tempore sed, facilis eos, similique ipsam accusantium soluta quas at?</p>
+            <p>Fish Haven has a lot to offer, especially when it comes to the main attraction: The fishing. We've put together this list to help you ensure you are ready for the best fishing excursion!</p>
+            <ul>
+                <li>freshwater or fly fishing rod</li>
+                <li>Fishing net (especially if you want to catch some Bonneville Cisco!)</li>
+                <li>small-large bait and tackle.</li>
+                <li>sun protection (hat, sunglasses, SPF 30 sunscreen or higher)</li>
+                <li>5 gallon bucket for holding catches</li>
+                <li>tape measure for measuring length of catches</li>
+            </ul>
             <span class="clearfix"></span>
         </article>
         <!-- contact info section -->
@@ -117,6 +133,7 @@
 <script src="js/scripts.js"></script>
 <script src="js/weatherapi.js"></script>
 <script src="js/windchill.js"></script>
+<script src="js/event-data.js"></script>
 
 <!-- webfontloader -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

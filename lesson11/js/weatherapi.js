@@ -10,11 +10,13 @@ const fishHavenID = "5585000"
 let apiURL = `//api.openweathermap.org/data/2.5/weather?id=${prestonID}&units=imperial&appid=${appID}`;
 let forecastURL = `//api.openweathermap.org/data/2.5/forecast?id=${prestonID}&units=imperial&appid=${appID}`;
 
+//change to soda springs
 if (document.getElementById("town-name").textContent == "Soda Springs") {
   apiURL = `//api.openweathermap.org/data/2.5/weather?id=${sodaSpringsID}&units=imperial&appid=${appID}`;
   forecastURL = `//api.openweathermap.org/data/2.5/forecast?id=${sodaSpringsID}&units=imperial&appid=${appID}`;
 }
 
+//change to fish haven
 if (document.getElementById("town-name").textContent == "Fish Haven") {
   apiURL = `//api.openweathermap.org/data/2.5/weather?id=${fishHavenID}&units=imperial&appid=${appID}`;
   forecastURL = `//api.openweathermap.org/data/2.5/forecast?id=${fishHavenID}&units=imperial&appid=${appID}`;
@@ -46,7 +48,7 @@ fetch(apiURL)
     //wind speed
     document.getElementById('speed').textContent = jsObject.wind.speed; //wind
 
-});
+}); //end weather summary fetch
 
 fetch(forecastURL)
   .then((response) => response.json())
@@ -84,7 +86,4 @@ fetch(forecastURL)
         document.getElementById("five-day").appendChild(theDay);
       }
     }
-
-
-
-  });
+  }); //end forecast fetch

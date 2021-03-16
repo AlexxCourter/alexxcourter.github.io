@@ -28,6 +28,16 @@
 
     article.forecast-article img, article.forecast-article aside {float: right; max-width: 50%; margin: 1rem 0 0 1rem;}
     article.forecast-article aside {padding: 0 1rem;}
+
+    div.event-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    article#events {grid-column: 2;}
+    article#events p {font-size: 1.3rem;}
+    div.event-grid img {grid-row: 1;}
+
     .medium-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
