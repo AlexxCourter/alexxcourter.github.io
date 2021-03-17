@@ -77,6 +77,7 @@ fetch(forecastURL)
         const iconURL = "//openweathermap.org/img/w/" + iconcode + ".png";
         let theIcon = document.createElement("img");
         theIcon.src = iconURL;
+        theIcon.alt = jsObject2.list[i].weather[0].description;
 
         let theDay = document.createElement("div");
         theDay.appendChild(dayName);
