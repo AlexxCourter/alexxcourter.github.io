@@ -40,13 +40,31 @@ fetch(apiURL)
     //weather description
     document.getElementById('current-weather').textContent = jsObject.weather[0].description;
     //temperatures
-    document.getElementById('current-temp').textContent = jsObject.main.temp; //currently
-    document.getElementById('high-temp').textContent = jsObject.main.temp_max; //High
-    document.getElementById('low-temp').textContent = jsObject.main.temp_min; //Low
+    document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0); //currently
+    document.getElementById('high-temp').textContent = jsObject.main.temp_max.toFixed(0); //High
+    document.getElementById('low-temp').textContent = jsObject.main.temp_min.toFixed(0); //Low
     //humidity
     document.getElementById('humidity').textContent = `${jsObject.main.humidity}%` ;
     //wind speed
-    document.getElementById('speed').textContent = jsObject.wind.speed; //wind
+    document.getElementById('speed').textContent = jsObject.wind.speed.toFixed(0); //wind
+
+    //CALCULATE WIND CHILL
+    //uses the formula f=35.74+0.6215t-35.75s^0.16+0.4275ts^0.16
+    //wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16) + (0.4275 * t) * (Math.pow(s, 0.16)))
+    const tempNumber = jsObject.main.temp;
+    console.log(tempNumber);
+
+    const speedNumber = jsObject.wind.speed;
+    console.log(speedNumber);
+
+    let windchill = 35.74 + (0.6215 * tempNumber) - 35.75 * Math.pow(speedNumber, 0.16) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+    windchill = Math.round(windchill);
+
+    if (tempNumber <= 50 && speedNumber > 3) {
+        document.getElementById("chill").textContent = windchill.toFixed(0) + "\xB0 F";
+    } else {
+        document.getElementById("chill").textContent = "N/A";
+    }
 
 }); //end weather summary fetch
 
@@ -71,7 +89,7 @@ fetch(forecastURL)
         dayName.textContent = myweekday[forecastDay];
 
         let temp = document.createElement("p");
-        temp.textContent = jsObject2.list[i].main.temp + "\xB0";
+        temp.textContent = jsObject2.list[i].main.temp.toFixed(0) + "\xB0";
 
         const iconcode = jsObject2.list[i].weather[0].icon;
         const iconURL = "//openweathermap.org/img/w/" + iconcode + ".png";
@@ -88,3 +106,6 @@ fetch(forecastURL)
       }
     }
   }); //end forecast fetch
+
+
+

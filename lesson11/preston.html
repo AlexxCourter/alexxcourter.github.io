@@ -28,7 +28,7 @@
     <header>
         <!-- below div for styling background of header -->
         <div class="header-container">
-            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <a href="index.html"><img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo"></a>
             <h1 class="white-text">Meteorology Station</h1>
             <h2 class="white-text">Weather together.</h2>
         </div>
@@ -53,8 +53,8 @@
         <h1 id="town-name">Preston Idaho</h1>
         <div class="hero-section">
             <picture class="hero">
-                <source media="(max-width: 400px)" srcset="images/preston-banner-small-400x167.jpg">
-                <source media="(max-width: 600px)" srcset="images/preston-banner-med-600x250.jpg">
+                <source media="(max-width: 400px)" srcset="images/preston-banner-small-400x400.jpg">
+                <source media="(max-width: 600px)" srcset="images/preston-banner-med-600x400.jpg">
                 <source media="(min-width: 960px)" srcset="images/preston-banner-large-960x400.jpg">
                 <!-- default -->
                 <img class="hero" src="images/preston-banner-large-960x400.jpg" alt="placeholder hero">
@@ -122,10 +122,9 @@
     </footer>
 
 <!-- call scripts for menu and footer date -->
-<script src="js/scripts.js"></script>
-<script src="js/weatherapi.js"></script>
-<script src="js/windchill.js"></script>
-<script src="js/event-data.js"></script>
+<script defer src="js/scripts.js"></script>
+<script defer src="js/weatherapi.js"></script>
+<script defer src="js/event-data.js"></script>
 
 <!-- webfontloader -->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

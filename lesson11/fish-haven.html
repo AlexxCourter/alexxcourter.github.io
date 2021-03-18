@@ -28,7 +28,7 @@
     <header>
         <!-- below div for styling background of header -->
         <div class="header-container">
-            <img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo">
+            <a href="index.html"><img src="images/meteorology-station-logo.png" alt="Meteorology Station Logo"></a>
             <h1 class="white-text">Meteorology Station</h1>
             <h2 class="white-text">Weather together.</h2>
         </div>
@@ -53,8 +53,8 @@
         <h1 id="town-name">Fish Haven</h1>
         <div class="hero-section">
             <picture class="hero">
-                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-banner-400x167.jpg">
-                <source media="(max-width: 600px)" srcset="images/fish-haven/fish-haven-banner-600x250.jpg">
+                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-banner-400x400.jpg">
+                <source media="(max-width: 600px)" srcset="images/fish-haven/fish-haven-banner-600x400.jpg">
                 <source media="(min-width: 960px)" srcset="images/fish-haven/fish-haven-banner-960x400.jpg">
                 <!-- default -->
                 <img class="hero" src="images/fish-haven/fish-haven-banner-960x400.jpg" alt="placeholder hero">
@@ -89,11 +89,11 @@
         <article class="forecast-article">
             <h2>Your fishing checklist: Enjoy Fish Haven to the max</h2>
             <picture>
-                <source media="(max-width: 400px)" srcset="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-small-256w.jpg">
-                <source media="(max-width: 600px)" srcset="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-medium-360w.jpg">
-                <source media="(max-width: 960px)" srcset="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-large-450w.jpg">
+                <source media="(max-width: 400px)" srcset="images/fish-haven/fish-haven-article-small-256w.jpg">
+                <source media="(max-width: 600px)" srcset="images/fish-haven/fish-haven-article-med-360w.jpg">
+                <source media="(max-width: 960px)" srcset="images/fish-haven/fish-haven-article-large-450w.jpg">
                 <!-- default -->
-                <img src="images/responsive-article-img/chris-holder-uY2UIyO5o5c-unsplash-600w.jpg" alt="placeholder article photo">
+                <img src="images/fish-haven/fish-haven-article-default-600w.jpg" alt="placeholder article photo">
             </picture>
             <p>Fish Haven has a lot to offer, especially when it comes to the main attraction: The fishing. We've put together this list to help you ensure you are ready for the best fishing excursion!</p>
             <ul>
@@ -132,7 +132,6 @@
 <!-- call scripts for menu and footer date -->
 <script src="js/scripts.js"></script>
 <script src="js/weatherapi.js"></script>
-<script src="js/windchill.js"></script>
 <script src="js/event-data.js"></script>
 
 <!-- webfontloader -->

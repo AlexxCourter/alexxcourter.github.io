@@ -23,6 +23,7 @@
     box-shadow: 6px 6px 5px rgba(0,0,0,0.5);
     column-gap: 0.5rem;
     }
+    .five-day h2 {margin-top: 0;}
 
     .five-day div:hover {border: none; box-shadow: 0 0 20px grey;}
 
