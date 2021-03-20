@@ -31,7 +31,6 @@ const myweekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frid
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     /*******************
      * WEATHER SUMMARY *
@@ -52,10 +51,8 @@ fetch(apiURL)
     //uses the formula f=35.74+0.6215t-35.75s^0.16+0.4275ts^0.16
     //wc = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16) + (0.4275 * t) * (Math.pow(s, 0.16)))
     const tempNumber = jsObject.main.temp;
-    console.log(tempNumber);
 
     const speedNumber = jsObject.wind.speed;
-    console.log(speedNumber);
 
     let windchill = 35.74 + (0.6215 * tempNumber) - 35.75 * Math.pow(speedNumber, 0.16) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
     windchill = Math.round(windchill);

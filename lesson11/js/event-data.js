@@ -7,7 +7,6 @@ fetch(refURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
     
     if (document.querySelector('h1#town-name').textContent == "Preston Idaho") {var townIndex = 6;}
     if (document.querySelector('h1#town-name').textContent == "Soda Springs") {var townIndex = 0;}
