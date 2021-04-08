@@ -89,7 +89,7 @@
         section.directory section.list-view h2 {font-size: 2rem;}
         section.directory section.list-view p {font-size: 1rem;}
 
-
+        section.directory {grid-row: 1/5}
         /* ------------- JOIN PAGE -------------- */
         div.benefit-table {
             display: grid;

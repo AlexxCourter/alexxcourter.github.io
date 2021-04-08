@@ -197,6 +197,13 @@ section.contact {
 
 section.contact img {width: 30px;}
 
+iframe {max-width: 100%;}
+/* founders */
+
+div.founder {border: 1px solid rgba(0,0,0,0.2); margin: 1rem 0; padding: 1rem 0.5rem;}
+div.founder p {margin: 0.2rem 0;}
+div.founder p:first-of-type {font-size: 1.2rem; margin-bottom: 0; margin-top: 0.5rem;}
+
 article.events div p {font-size: 0.8rem; margin: 0.2rem 0;}
 article.events div h3 {font-size: 1rem; margin: 0.5rem 0 0.2rem 0;}
 
