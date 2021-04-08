@@ -26,6 +26,7 @@ fetch(refURL)
     let iconcode = jsObject.current.weather[0].icon;
     const iconURL = "//openweathermap.org/img/w/" + iconcode + ".png";
     img1.src = iconURL;
+    img1.alt = jsObject.current.weather[0].description;
     document.getElementById('icon').appendChild(img1);
     //3 day forecast
     day = today + 1;
