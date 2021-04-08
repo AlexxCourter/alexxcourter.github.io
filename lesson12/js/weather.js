@@ -28,7 +28,7 @@ fetch(refURL)
     img1.src = iconURL;
     document.getElementById('icon').appendChild(img1);
     //3 day forecast
-    day = today;
+    day = today + 1;
     for (let i = 0; i < 3; i++) {
         
         if (day > 6) {

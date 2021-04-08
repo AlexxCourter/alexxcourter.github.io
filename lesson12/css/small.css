@@ -25,6 +25,7 @@ p, div, footer {font-family: "Merriweather", serif;}
 
 
 div#alert-box.hideme {display: none;}
+.hideme {display: none;}
 
 div#alert-box {
     display: flex;
