@@ -1,0 +1,155 @@
+<!-- first name - required -->
+<!-- last name - required -->
+<!-- title -->
+<!-- email -required -->
+<!-- cell phone -->
+<!-- business name - required -->
+<!-- business address -->
+<!-- business website -->
+<!-- business description -->
+<!-- membership level selection that displays the annual fees (in a table) -->
+<!-- four tiers: non-profit ($100), bronze ($200), silver ($400), gold ($1000) -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NC3 - Neptune City Chamber of Commerce</title>
+        
+            <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+    
+    
+         <!-- STYLE SHEETS -->
+        <!-- normalize -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/small.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/medium.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/large.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- weather alert box - closeable -->
+        <div id="alert-box" class="hideme"></div>
+        <header>
+            <img src="images/nc-logo.png" alt="logo">
+            <div>
+            <h1>Neptune City Chamber of Commerce</h1>
+            <h2>Connecting Your Neighborhood</h2>
+        </div>
+        </header>
+        <nav>
+            <!-- below div for styling background of nav-->
+            <div class="nav-container">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="headNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="neptune-city.html">Neptune City</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="active-page"><a href="join.html">Join Chamber</a></li>
+                </ul>
+                </div>
+        </nav>
+        <!-- page content -->
+        <!-- banner -->
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="images/handshake_400.jpg">
+                <source media="(max-width: 600px)" srcset="images/handshake_600.jpg">
+                <source media="(min-width: 960px)" srcset="images/handshake_960.jpg">
+                <!-- default -->
+                <img class="hero" src="images/handshake_960.jpg" alt="home hero banner">
+            </picture>
+        </div>
+     <!-- main: page content -->
+    <main>
+        <h1>Join the Neptune City Chamber of Commerce</h1>
+        <form method="get" action="join-thanks.html">
+            <fieldset>
+                <legend>Your information</legend>
+                <label class="top">First Name* <input type="text" name="fname" pattern="[A-Za-zA-za-Z]" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" pattern="[A-Za-zA-za-Z]" required></label>
+                <label class="top">Title <input type="text" name="lname" pattern="[A-Za-zA-za-Z]"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[A-Za-zA-za-Z0-9]@[a-z].[a-z]{3}" required></label>
+                <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="0000000000" pattern="[0-9]{10}" required></label>
+                <label class="top">Business Name* <input type="text" name="bname" pattern="[A-Za-zA-za-Z]" required></label>
+                <label class="top">Zip Code <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your business information</legend>
+                <label class="top">Business Name* <input type="text" name="bname" pattern="[A-Za-zA-za-Z]" required></label>
+                <label class="top">Business Address <input type="text" name="baddress" pattern="[A-Za-zA-za-Z0-9,]"></label>
+                <label class="top">Business Website <input type="text" name="bwebsite" pattern="[A-Za-zA-za-Z0-9,].[a-z]"></label>
+                <label class="top">Business Description <textarea name="bdesc" cols="20" rows="5"></textarea></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Select Membership Level</legend>
+
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="nonprofit" required> Non-profit - $100</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze - $200</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver - $400</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold - $1000</label>
+
+                <div class="benefit-table">
+                    <div id="nonprof">
+                        <p>Non-profit<br><br>$100</p>
+                        <p>All Bronze Membership benefits at a lower cost</p>
+                        <p>access to our group of other non-profits for networking</p>
+                        <p>Upgrade to other tiers at reduced costs: Contact our representative for more info</p>
+                        <p>Discounts on all event engagements, such as booths, ads, and more</p>
+                    </div>
+                    <div id="bronze">
+                        <p>Bronze<br><br>$200</p>
+                        <p>One monthly social media ad campaign</p>
+                        <p>2 free tickets to annual NC3 business expo</p>
+                        <p>personalized business listing here on the NC3 website</p>
+                        <p>access to private online community of business owners</p>
+                    </div>
+                    <div  id="silver">
+                        <p>Silver<br><br>$400</p>
+                        <p>All Bronze membership benefits, plus:</p>
+                        <p>One additional monthly social media ad campaign</p>
+                        <p>Sponsorship agreement for major city events, includes posters and booth rental</p>
+                        <p>One monthly email ad campaign to our list of subscribers</p>
+                    </div>
+                    <div  id="gold">
+                        <p>Gold<br><br>$1000</p>
+                        <p>All Bronze and Silver benefits, plus:</p>
+                        <p>One additional monthly social media ad campaign (total of 3)</p>
+                        <p>10 additional free tickets to annual NC3 business expo</p>
+                        <p>access to private gold member group community and events/offers</p>
+                    </div>
+                </div>
+
+            </fieldset>
+    
+            <input class="submitBtn" type="submit" value="Join Chamber">
+    
+        </form>
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    
+
+    <footer>
+        &copy; 2021 Alex Courter
+        <p id="update-date"></p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/page-scripts.js"></script>
+
+    <!-- webfontloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/font.js"></script>
+
+</body>
+</html>

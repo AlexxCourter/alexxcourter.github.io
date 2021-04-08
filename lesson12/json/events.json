@@ -1,0 +1,19 @@
+{
+    "events" : [
+        {
+            "title" : "73rd Annual Championship Bowling Tournament",
+            "date" : "Saturday, April 10 thru April 18",
+            "address" : "Shore Lanes<br>701 NJ-35, Neptune City, NJ"
+        },
+        {
+            "title" : "Paddle for the Planet (Shark River/Memorial Park)",
+            "date" : "Saturday, April 17 @10AM - 1PM",
+            "address" : "Memorial Park<br>1-41 Riverview Ave, Neptune City, NJ"
+        },
+        {
+            "title" : "NEW SHOW! The Soft Parade Live at HEADLINER OASIS, Neptune City, NJ",
+            "date" : "Friday, April 23 @8PM",
+            "address" : "Headliner Oasis<br>1401 NJ-35, Neptune City, NJ"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+@media only screen and (min-width: 64rem) {
+
+    /*----------- NAVIGATION --------------*/
+    /* display nav normally for large screens */
+    nav ul, nav ul.hide {display: flex;}
+    /* added .hide class to fix error with hidden nav when menu is collapsed */
+    nav ul li { flex: 1 1 100%;}
+    nav ul li a {
+        padding: .5rem 1rem;
+        font-size: 1.0rem;
+        }
+    
+    nav ul li.active-page a {
+        border-radius: 14px 14px 0 0;
+    }
+    
+    nav ul li a:hover {
+        border-radius: 14px 14px 0 0;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    /* ------------MAIN------------- */
+    main {padding-left: 0;}
+
+    /* sidebar */
+    div.large-sidebar-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 1rem;
+    }
+
+    div.large-sidebar-grid .sidebar-background {background-color: #292929; grid-column: 1; grid-row: 1/7}
+
+    .sidebar-item {display: block; grid-column: 1; background-color: #292929; color: white; padding: 1rem;}
+    .main-content {grid-column: 2;}
+    section.weather {display: block; grid-row: 1;}
+    section.weather span {font-size: 1rem;}
+    section.weather img {display: inline; background-color: white; border-radius: 5px; margin-top: 1rem;}
+    section.weather div.forecast {color: black; margin: 1rem 0;}
+
+    article.events.sidebar-item {grid-row: 2;}
+
+    section.side-nav.sidebar-item {grid-row: 3;}
+    section.sidebar-item.hide-medium-small {grid-row:4/6; background-color: #292929;}
+
+    
+    header img {width: 75px;}
+
+
+    header div.header-container, nav div.nav-container, main {
+        max-width: 1424px;
+        margin: 0 auto;
+    }
+
+    article.events.sidebar-item {grid-row: 2/7}
+    article.events div p {font-size: 1rem; margin: 0.3rem 0;}
+    article.events div h3 {font-size: 1.2rem; margin: 1rem 0 0.5rem 0;}
+
+    img.hero {display: block; max-width: 1424px; margin: 0 auto;}
+
+    section.companies.directory, section.companies {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section.companies h2 {grid-column: 1/-1}
+    section.companies section {
+        width: 100%;
+    }
+
+    section.companies.main-content section {grid-template-columns: 1fr; row-gap: 1rem;}
+
+    div.cta {font-size: 1.4rem; text-align: center; padding: 2rem 1rem;}
+
+        /* ------------- NEPTUNE CITY PAGE -------------- */
+        div.gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /* ------------- DIRECTORY PAGE -------------- */
+        section.companies.directory section h2 {margin-top: 0;}
+        section.companies.directory div {margin-right: 0.4rem;}
+        section.companies.directory section p {font-size: 0.7rem;}
+        section.companies.directory div.button-container {display: grid; grid-template-columns: 1fr 1fr; grid-row: 1; grid-column: 3;}
+        section.companies.directory h2 {grid-row: 1;}
+        
+        section.directory section.card-view h2 {font-size: 1.3rem;}
+        section.directory section.list-view h2 {font-size: 2rem;}
+        section.directory section.list-view p {font-size: 1rem;}
+
+
+        /* ------------- JOIN PAGE -------------- */
+        div.benefit-table {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+         /* ------------- contact page -------------- */
+        div.info-grid {display: grid; grid-template-columns: 1fr 400px; padding: 1rem 0;}
+        div.info-grid h1 {grid-column: 1/-1;}
+        div.info-container form fieldset {margin: 0 0.5rem;}
+
+} /* end of media query */

@@ -1,0 +1,82 @@
+{
+    "companies": [
+        {
+            "name": "Jersey Shore Florist",
+            "photo": "florist-600x600.jpg",
+            "category": "Florist",
+            "desc": "Jersey Shore Florist proudly serves the Neptune area. We are family owned and operated, three generations.",
+            "yearFounded": "N/A",
+            "address1": "2300 State Rte 33, Brighton Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "800-832-4797",
+            "website": "https://www.jerseyshoreflorist.com/"
+        },
+        {
+            "name": "Pete & Elda's Bar/Carmen's Pizzeria",
+            "photo": "pnelda.png",
+            "category": "Restaraunt",
+            "desc": "Veteran pizzeria & bar serving thin-crust pies, pasta & sandwiches in a bustling, no-frills setting.",
+            "yearFounded": "N/A",
+            "address1": "93 Summit Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-774-6010",
+            "website": "https://peteandeldas.com/"
+        },
+        {
+            "name": "Luxx Nails and Beauty Bar",
+            "photo": "luxx_nails.jpg",
+            "category": "Beauty Salon",
+            "desc": "Nail Salon in Neptune City",
+            "yearFounded": "",
+            "address1": "108 W Sylvania Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-775-5899",
+            "website": "https://luxx-nails-beauty-bar.business.site/"
+        },
+        {
+            "name": "Cone Zone",
+            "photo": "conezone.jpg",
+            "category": "Ice Cream Shop",
+            "desc": "Neighborhood ice cream shop since 1993",
+            "yearFounded": "1993",
+            "address1": "2040 NJ-33",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-502-0066",
+            "website": "https://conezonenj.weebly.com/"
+        },
+        {
+            "name": "Joe's Farm Market",
+            "photo": "farm.jpg",
+            "category": "Garden Center",
+            "desc": "Joe’s Farm Market in Neptune has been a landmark at the Jersey shore and we’ve all enjoyed the fruits of its labors for over 40 years.",
+            "yearFounded": "N/A",
+            "address1": "307 W Sylvania Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-775-8555",
+            "website": "https://www.joesfarmmarket.com/"
+        },
+        {
+            "name": "Ocean Athletics",
+            "photo": "oa-black.jpg",
+            "category": "Gym",
+            "desc": "At Ocean Athletics we wanted the best for our members and giving them an elite facility with top of the line equipment. Not only do we take pride in what we built, but we set a very high standard keeping this the cleanest CrossFit gym around.",
+            "yearFounded": "N/A",
+            "address1": "64 Steiner Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-807-4818",
+            "website": "https://oceanathletics.fit/"
+        },
+        {
+            "name": "Michael's Motorcars",
+            "photo": "dealer-logo.jpg",
+            "category": "Used car dealer",
+            "desc": "You can expect to find everything from reliable diesels to affordable luxury cars here every day, and we always provide our vehicles at a great price.",
+            "yearFounded": "N/A",
+            "address1": "51 W Sylvania Ave",
+            "address2": "Neptune City, NJ 07753",
+            "phone": "732-775-4444",
+            "website": "https://www.michaelsmotorcars.net/"
+        }
+
+    ]
+}

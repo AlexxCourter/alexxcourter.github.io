@@ -1,0 +1,89 @@
+<!-- first name - required -->
+<!-- last name - required -->
+<!-- title -->
+<!-- email -required -->
+<!-- cell phone -->
+<!-- business name - required -->
+<!-- business address -->
+<!-- business website -->
+<!-- business description -->
+<!-- membership level selection that displays the annual fees (in a table) -->
+<!-- four tiers: non-profit ($100), bronze ($200), silver ($400), gold ($1000) -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NC3 - Neptune City Chamber of Commerce</title>
+        
+        <!-- favicon -->
+            <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico">
+    
+         <!-- STYLE SHEETS -->
+        <!-- normalize -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/small.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/medium.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/large.css" rel="stylesheet">
+    
+    </head>
+    <body>
+        <!-- weather alert box - closeable -->
+        <div id="alert-box" class="hideme"></div>
+        <header>
+            <img src="images/nc-logo.png" alt="logo">
+            <div>
+            <h1>Neptune City Chamber of Commerce</h1>
+            <h2>Connecting Your Neighborhood</h2>
+        </div>
+        </header>
+        <nav>
+            <!-- below div for styling background of nav-->
+            <div class="nav-container">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="headNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="neptune-city.html">Neptune City</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="active-page"><a href="join.html">Join Chamber</a></li>
+                </ul>
+                </div>
+        </nav>
+        <!-- page content -->
+        <!-- banner -->
+        <div class="hero-section">
+            <picture class="hero">
+                <source media="(max-width: 400px)" srcset="">
+                <source media="(max-width: 600px)" srcset="">
+                <source media="(min-width: 960px)" srcset="">
+                <!-- default -->
+                <img class="hero" src="http://www.placekitten.com/960/300" alt="home hero banner">
+            </picture>
+        </div>
+     <!-- main: page content -->
+    <main>
+        <h1>Thank you for your Application</h1>
+        <p>An email verification of your application was sent to the email address you provided. We will process your application and get back to you as soon as possible. Thank you for joining the Neptune City Chamber of Commerce!</p>        
+    </main>
+    <!-- footer: copyright year, site creator, portal home, link to image attribution -->
+    <footer>
+        &copy; 2021 Alex Courter
+        <p id="update-date"></p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/page-scripts.js"></script>
+
+    <!-- webfontloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/font.js"></script>
+
+</body>
+</html>

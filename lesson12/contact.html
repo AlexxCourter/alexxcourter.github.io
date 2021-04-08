@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC3 - Neptune City Chamber of Commerce</title>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+
+     <!-- STYLE SHEETS -->
+    <!-- normalize -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- weather alert box - closeable -->
+    <div id="alert-box" class="hideme"></div>
+    <header>
+        <img src="images/nc-logo.png" alt="logo">
+        <div>
+        <h1>Neptune City Chamber of Commerce</h1>
+        <h2>Connecting Your Neighborhood</h2>
+    </div>
+    </header>
+    <nav>
+        <!-- below div for styling background of nav-->
+        <div class="nav-container">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="headNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="neptune-city.html">Neptune City</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active-page"><a href="contact.html">Contact Us</a></li>
+                <li><a href="join.html">Join Chamber</a></li>
+            </ul>
+            </div>
+    </nav>
+    <!-- page content -->
+    <!-- banner -->
+    <div class="hero-section">
+        <picture class="hero">
+            <source media="(max-width: 400px)" srcset="images/mail_400.jpg">
+            <source media="(max-width: 600px)" srcset="images/mail_600.jpg">
+            <source media="(min-width: 960px)" srcset="images/mail_960.jpg">
+            <!-- default -->
+            <img class="hero" src="images/mail_960.jpg" alt="home hero banner">
+        </picture>
+    </div>
+    <main>
+        <div class="large-sidebar-grid">
+        <div class="sidebar-background"></div>
+        <section class="weather sidebar-item">
+            <h2>Neptune City</h2>
+            <div class="left-grid">
+                <span id="current-temp"></span>
+                <span id="desc"></span>
+                <span id="humid"></span>
+            </div>
+            <span id="icon"></span>
+        </section>
+        <div class="info-grid main-content">
+            <h1>Contact Us</h1>
+            <div class="info-container">
+                
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Send us a message</legend>
+                        <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-zA-za-Z]" required></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[A-Za-zA-za-Z0-9]@[a-z].[a-z]{3}" required></label>
+                        <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="0000000000" pattern="[0-9]{10}" required></label>
+                        <label class="top">Message* <textarea name="bdesc" cols="20" rows="5" required></textarea></label>
+                    
+                        <input class="submitBtn" type="submit" value="Send Message">
+                    </fieldset>
+                    
+                </form>
+            </div>
+            <iframe width="400" height="400" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJkUZ4BqnVw4kRPKw3l9sTZxs&key=AIzaSyD6sOP36Lef9nRbJI1k-1PyXPE0RZg1Z9c"></iframe>
+        </div>
+        <!-- basic contact us form asking for name, phone, and email with comment -->
+        
+        
+        <!-- list of the board of directors -->
+        <div class="main-content">
+            <h2>Meet the board of directors</h2>
+            <ul>
+                <li>Leif Erikson</li>
+                <li>Amerigo Vespucci</li>
+                <li>Chris Columbus</li>
+                <li>Mahonri Moriancumr</li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="cta main-content">
+            Want to feature your business? Join the Chamber of Commerce today
+            <a href="join.html">Join Chamber</a>
+        </div>
+        <!-- upcoming events -->
+        <article class="events sidebar-item hide-medium-small">
+            <h2>Upcoming Events</h2>
+        </article>
+        <!-- contact info and social media/footer area -->
+        <!-- embedded google map of neptune city -->
+        
+        <section class="contact main-content">
+            <h3>Lets Connect</h3>
+            <p>000 W Streety Road, Neptune City, NJ 07753</p>
+            <p>000-000-0000</p>
+            <img src="images/social/f_logo_RGB-Black_58.png" alt="facebook logo">
+            <img src="images/social/instagram.png" alt="instagram logo">
+        </section>
+    </div>
+    </div>
+    </main>
+    <footer>
+        &copy; 2021 Alex Courter | <a href="credits.html">Image Credits</a>
+        <p id="update-date"></p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/page-scripts.js"></script>
+    <script src="js/weather.js"></script>
+    <!-- webfontloader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/font.js"></script>
+
+</body>
+</html>
