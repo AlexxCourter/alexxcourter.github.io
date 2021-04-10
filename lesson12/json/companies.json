@@ -2,7 +2,7 @@
     "companies": [
         {
             "name": "Jersey Shore Florist",
-            "photo": "florist-600x600.jpg",
+            "photo": "florist-400x400.jpg",
             "category": "Florist",
             "desc": "Jersey Shore Florist proudly serves the Neptune area. We are family owned and operated, three generations.",
             "yearFounded": "N/A",
@@ -13,7 +13,7 @@
         },
         {
             "name": "Pete & Elda's Bar/Carmen's Pizzeria",
-            "photo": "pnelda.png",
+            "photo": "pnelda.jpg",
             "category": "Restaraunt",
             "desc": "Veteran pizzeria & bar serving thin-crust pies, pasta & sandwiches in a bustling, no-frills setting.",
             "yearFounded": "N/A",
