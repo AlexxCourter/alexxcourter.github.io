@@ -26,7 +26,7 @@ fetch(referenceURL)
           
           //set src and alt attributes of each image, set images to lazy loading
           image.setAttribute('src', "images/company-logos/" + companies[i].photo); //name photos the same as in JSON file
-          image.setAttribute('alt', companies[i].name + " - " + companies[i].desc);
+          image.setAttribute('alt', companies[i].name + " - " + companies[i].alt);
           image.setAttribute('loading', 'lazy')
 
           h2.textContent = companies[i].name;
