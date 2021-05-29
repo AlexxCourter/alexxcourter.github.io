@@ -1,56 +1,66 @@
-/*Whole page*/
-header, main, footer {
+/* Whole page */
+header,
+main,
+footer {
   margin: 0 auto;
   max-width: 760px;
   display: block;
 }
 
-h1, h2, p, ul {
+h1,
+h2,
+p,
+ul {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/*header*/
+/* header */
 .home-portrait {
   max-width: 100%;
   border-radius: 50%;
   box-shadow: black 5px 5px 10px;
-  margin: 1em;
   display: block;
   margin: 0 auto;
 }
 
 header h1 {
-  background-color: #15507A;
+  background-color: #15507a;
   color: white;
   padding: 1em;
   border-radius: 10px;
 }
-/*Main section*/
+
+/* Main section */
 main h2 {
   padding-left: 1em;
   padding-bottom: 0.5em;
 }
+
 .assignments {
   margin-left: 1em;
 }
+
 .bottom-border {
   border-bottom: 1px solid black;
 }
 
-/*footer*/
+/* footer */
 footer {
-  background-color: #15507A;
+  background-color: #15507a;
   padding: 0.5em;
   border-radius: 10px;
 }
+
 footer p {
   color: white;
   text-align: center;
   clear: right;
 }
+
 footer p a {
   color: white;
 }
+
 #date-updated {
-  color: #CEF3E1;
+  color: #cef3e1;
 }
